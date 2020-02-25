@@ -15,3 +15,5 @@ WORKDIR /server
 VOLUME  /server
 
 RUN ["mono" "./server.exe"]
+
+EXPOSE 8800/udp 8900/tcp
