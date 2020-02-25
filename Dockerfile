@@ -2,7 +2,7 @@ FROM mono:latest
 
 ENV TAG="latest"
 
-RUN curl -o /tmp/server.zip https://github.com/LunaMultiplayer/LunaMultiplayer/releases/${TAG}/download/package.zip
+RUN curl https://github.com/LunaMultiplayer/LunaMultiplayer/releases/${TAG}/download/package.zip > /tmp/server.zip
 
 RUN apt update \
     && apt install unzip
