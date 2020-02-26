@@ -6,7 +6,8 @@ ENV TAG="latest"
 RUN apt update \
     && apt install unzip wget
 
-RUN wget -O /tmp/server.zip https://github.com/LunaMultiplayer/LunaMultiplayer/releases/${TAG}/download/package.zip
+RUN wget -O /tmp/server.zip https://github.com/LunaMultiplayer/LunaMultiplayer/releases/${TAG}/download/LunaMultiplayer-Release.zip
+
 
 RUN unzip /tmp/server.zip
 
