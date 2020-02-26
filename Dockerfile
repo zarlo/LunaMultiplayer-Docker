@@ -11,7 +11,7 @@ RUN wget -O /tmp/server.zip https://github.com/LunaMultiplayer/LunaMultiplayer/r
 
 RUN unzip /tmp/server.zip
 
-RUN cp /tmp/LMPServer/* /server/
+RUN cp /tmp/LMPServer/ /server/
 
 WORKDIR /server
 VOLUME  /server
